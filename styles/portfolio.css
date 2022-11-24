@@ -6,20 +6,20 @@
 .hero {
   text-align: center;
   background-image: url("/img/1.jpeg");
+  filter: grayscale(20%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 700px;
+  min-height: 800px;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 h1,
 h2,
 p {
   font-family: var(--main-font);
-  color: white;
-  text-shadow: 1px 1px 1px grey;
 }
 
 h1 {
@@ -27,17 +27,23 @@ h1 {
   font-style: bold;
   margin-top: 30px;
   margin-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px grey;
 }
 
 .hero p {
   font-size: 18px;
   font-style: normal;
   padding-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px grey;
 }
 
-h2 {
+.hero h2 {
   font-size: 24px;
   font-style: bold;
+  color: white;
+  text-shadow: 1px 1px 1px grey;
 }
 
 .hero_content {
@@ -52,4 +58,91 @@ h2 {
   color: black;
   border-radius: 50px;
   margin-top: 30px;
+}
+
+.row {
+  margin: 5px;
+}
+
+.photos h2 {
+  color: white;
+  padding-top: 20px;
+  font-family: var(--additional-font);
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
+.img-fluid {
+  filter: grayscale(80%);
+}
+
+.img-fluid:hover {
+  filter: grayscale(0);
+}
+
+.photos {
+  text-align: center;
+}
+
+.col-4 {
+  padding: 15px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 500px;
+    margin-bottom: 15px;
+  }
+  .img-fluid {
+    filter: grayscale(0);
+  }
+  .row {
+    margin: 1px;
+  }
+
+  .hero a {
+    padding: 9px 20px 9px 20px;
+    font-family: var(--additional-font);
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: smaller;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 52px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+
+  .photos h2 {
+    font-size: 16px;
+  }
+
+  .col-4 {
+    padding: 10px;
+  }
+
+  .navbar-brand,
+  .nav-link,
+  .navbar-toggler-icon {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 600px) {
+  .col-4 {
+    padding: 2px;
+  }
 }
