@@ -23,11 +23,14 @@ p {
 }
 
 h1 {
-  font-size: 72px;
   font-style: bold;
+  color: white;
+}
+
+.hero h1 {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: white;
+  font-size: 72px;
   text-shadow: 1px 1px 1px grey;
 }
 
@@ -51,7 +54,7 @@ h1 {
   margin: auto;
 }
 
-.hero a {
+.inner_button {
   padding: 18px 40px 18px 40px;
   font-family: var(--additional-font);
   background-color: white;
@@ -60,7 +63,7 @@ h1 {
   margin-top: 30px;
 }
 
-.row {
+.photo_grid {
   margin: 5px;
 }
 
@@ -90,6 +93,92 @@ body {
   padding: 15px;
 }
 
+.my_info {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.my_info h1 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: bold;
+  color: rgba(246, 82, 130, 1);
+}
+
+.my_info p {
+  font-size: 16px;
+  font-style: normal;
+  color: white;
+}
+
+.icons {
+  margin-bottom: 40px;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.camera_name {
+  padding-right: 10px;
+}
+
+.camera {
+  margin-bottom: 40px;
+  background-color: black;
+  padding: 10px;
+  width: 250px;
+}
+
+.icon_link {
+  text-decoration: none;
+  color: white;
+}
+
+.icon_link:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.my_photo {
+  filter: grayscale(10%);
+}
+
+.photos_about {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.about_photo_grid {
+  padding: 30px;
+}
+
+.top_block_about {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .my_info h1 {
+    font-size: 36px;
+  }
+
+  .my_info h3 {
+    font-size: 14px;
+  }
+
+  .my_info p {
+    font-size: 14px;
+  }
+
+  .photos_about {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 900px) {
   .hero {
     min-height: 500px;
@@ -98,11 +187,23 @@ body {
   .img-fluid {
     filter: grayscale(0);
   }
-  .row {
+  .photos .row {
     margin: 1px;
   }
 
-  .hero a {
+  .my_info p {
+    font-size: 12px;
+  }
+
+  .camera {
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    margin-bottom: 20px;
+  }
+
+  .inner_button {
     padding: 9px 20px 9px 20px;
     font-family: var(--additional-font);
     background-color: white;
@@ -117,11 +218,12 @@ body {
     margin-top: 20px;
   }
 
-  h1 {
+  .hero h1 {
     font-size: 52px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .hero p {
     font-size: 15px;
   }
@@ -130,7 +232,7 @@ body {
     font-size: 16px;
   }
 
-  .col-4 {
+  .photos .col-4 {
     padding: 10px;
   }
 
@@ -142,7 +244,28 @@ body {
 }
 
 @media (max-width: 600px) {
-  .col-4 {
+  .photos .col-4 {
     padding: 2px;
+  }
+  .my_photo {
+    max-height: 500px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .my_info {
+    text-align: center;
+    padding: 10px;
+    margin-right: 0px;
+  }
+  .camera {
+    margin: 15px auto;
+  }
+
+  .photos_about {
+    padding-top: 20px;
+  }
+
+  .about_photo_grid {
+    padding: 4px;
   }
 }
