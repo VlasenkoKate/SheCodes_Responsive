@@ -161,6 +161,25 @@ h3 {
   align-items: center;
 }
 
+.travels {
+  padding-top: 30px;
+}
+
+.travels_heading {
+  font-size: 64px;
+}
+
+.travels h2 {
+  color: rgba(246, 82, 130, 1);
+  font-size: 30px;
+}
+
+.travels_p {
+  color: white;
+  margin: 10px 30px 10px 30px;
+  font-size: 14px;
+}
+
 @media (max-width: 1000px) {
   .my_info h1 {
     font-size: 36px;
@@ -267,5 +286,14 @@ h3 {
 
   .about_photo_grid {
     padding: 4px;
+  }
+
+  .travels_p {
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .travels_heading {
+    font-size: 36px;
   }
 }
