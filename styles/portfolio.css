@@ -140,7 +140,7 @@ h3 {
 
 .icon_link:hover {
   text-decoration: none;
-  color: blue;
+  color: rgba(246, 82, 130, 1);
 }
 
 .my_photo {
@@ -191,6 +191,30 @@ h3 {
 
 .contact_heading {
   margin: 40px 0px 30px 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgba(40, 35, 35, 1);
+  padding: 20px;
+  margin: 20px 0px 10px 0px;
+  align-items: center;
+}
+
+footer h4 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+footer p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+footer .icons {
+  margin: 0px 0px 0px 8px;
 }
 
 @media (max-width: 1000px) {
@@ -308,5 +332,25 @@ h3 {
 
   .travels_heading {
     font-size: 36px;
+  }
+
+  footer .icons {
+    font-size: smaller;
+  }
+
+  footer h4 {
+    font-size: 12px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  footer .icon {
+    margin-right: 5px;
   }
 }
